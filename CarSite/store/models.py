@@ -86,7 +86,7 @@ class Rating(models.Model):
 #     #     return f'{self.user}'
 #
 #
-# class History(models.Model):
-#     # user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
-#     car = models.ForeignKey(Car, on_delete=models.CASCADE)
-#     viewed_at = models.DateTimeField(auto_now_add=True)
+class History(models.Model):
+    # user = models.ForeignKey(UserProfile, on_delete=models.CASCADE)
+    car = models.ForeignKey(Car, on_delete=models.CASCADE)
+    viewed_at = models.DateTimeField(auto_now_add=True)
