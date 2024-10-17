@@ -28,7 +28,7 @@ class Car(models.Model):
         return self.car_name
 
     CHOICES_DRIVE = (
-        ('задный', 'зад'),
+        ('задный', 'задный'),
         ('передний', 'передний'),
         ('полный', 'полный')
     )
