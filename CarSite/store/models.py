@@ -1,6 +1,7 @@
 from django.db import models
 
 
+
 class Car(models.Model):
     car_name = models.CharField(max_length=100)
     # category=models.ForeignKey(Category,on_delete=models.CASCADE)
@@ -27,7 +28,7 @@ class Car(models.Model):
         return self.car_name
 
     CHOICES_DRIVE = (
-        ('задный', 'задный'),
+        ('задный', 'зад'),
         ('передний', 'передний'),
         ('полный', 'полный')
     )
